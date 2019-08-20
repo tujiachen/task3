@@ -1,3 +1,5 @@
+//arr：自动重装值。
+//psc：时钟预分频数
 int main(void)
 {
   delay_init(); //延时函数初始化
@@ -11,3 +13,6 @@ int main(void)
    delay_ms(200);
   }
 }
+Tout= ((arr+1)*(psc+1))/Tclk；
+//Tclk：TIM3 的输入时钟频率（单位为 Mhz）。
+//Tout：TIM3 溢出时间（单位为 us）。
